@@ -6,15 +6,15 @@ import { v4 as uuidv4 } from 'uuid';
 
 const todosinitialState = {
   todos: [
-    { id: 1, text: "finishing writing hooks chapter" },
-    { id: 2, text: "play with kids" },
-    { id: 3, text: "read bible" }
+    { id: 1, text: "finishing coding hooks chapter" },
+    { id: 2, text: "git push" },
+    { id: 3, text: "git paid" }
   ]
 };
 
 function todosReducer(state, action) {
   switch (action.type) {
-    /*****************CREATING***********************/
+    
     case 'add':
       //generates unique id 
       const newToDo = { id: uuidv4(), text: action.payload }
@@ -22,7 +22,7 @@ function todosReducer(state, action) {
       const addedToDos = [...state.todos, newToDo]
       // spread our state and assign todos
       return { ...state, todos: addedToDos }
-      /*****************UPDATING***********************/
+      
     case 'edit':
       const updatedToDo = { ...action.payload }
       //find the todo by id
@@ -36,7 +36,7 @@ function todosReducer(state, action) {
         ...state.todos.slice(updatedToDoIndex + 1)
       ];
       return { ...state, todos: updatedToDos }
-      /*****************DELETING***********************/
+      
     case 'delete':
       //filters through array removing object we choose to delete
       const filteredTodoState = state.todos.filter(todo => todo.id !==
