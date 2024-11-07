@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 const todosinitialState = {
   todos: [
-    { id: 1, text: "finishing writing hooks chapter" },
-    { id: 2, text: "play with kids" },
-    { id: 3, text: "read bible" }
+    { id: 1, text: "Record Chapter 9 Video" },
+    { id: 2, text: "Be Awesome" },
+    { id: 3, text: "Serve" }
   ]
 };
 

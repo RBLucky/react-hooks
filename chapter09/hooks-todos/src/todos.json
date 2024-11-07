@@ -2,15 +2,19 @@
     "todos": [
         {
             "id": 1,
-            "text": "Finish React Hooks Book"
+            "text": "Record Chapter 9 Video"
         },
         {
             "id": 2,
-            "text": "Do 1 hour Cardio"
+            "text": "Be Awesome"
         },
         {
             "id": 3,
-            "text": "Read Bible"
+            "text": "Serve"
+        },
+        {
+            "id": 4,
+            "text": "Finish Recording"
         }
     ]
 }
